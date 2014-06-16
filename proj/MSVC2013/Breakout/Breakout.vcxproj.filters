@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="GameWindow">
+      <UniqueIdentifier>{281096d7-07bf-4b7d-bf45-9e461af4e90a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameWindow\GameRenderer">
+      <UniqueIdentifier>{a25665b6-aac9-4fdd-8d4c-efb020c8b925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Elements">
+      <UniqueIdentifier>{b1036bbd-51bd-4fe0-a6a6-2896dc6266dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Elements\Ball">
+      <UniqueIdentifier>{d191ad9a-2038-4837-ae74-a44db5e800a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Elements\Brick">
+      <UniqueIdentifier>{278671a5-58b5-411e-9503-d30029136e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game Elements\Paddle">
+      <UniqueIdentifier>{aae146e5-dbe8-4f07-b412-4b8397f60123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameWindow\GameStage">
+      <UniqueIdentifier>{83a53156-d452-4137-a338-30f5a342c6e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameWindow.cpp">
+      <Filter>GameWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameRenderer.cpp">
+      <Filter>GameWindow\GameRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Ball.cpp">
+      <Filter>Game Elements\Ball</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Brick.cpp">
+      <Filter>Game Elements\Brick</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\Paddle.cpp">
+      <Filter>Game Elements\Paddle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\GameStage.cpp">
+      <Filter>GameWindow\GameStage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\Breakout.cfg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\src\frg.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\src\vtx.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\..\PBCopy.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\Drawable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Updatable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameWindow.hpp">
+      <Filter>GameWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameRenderer.hpp">
+      <Filter>GameWindow\GameRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Vertex.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Ball.hpp">
+      <Filter>Game Elements\Ball</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Brick.hpp">
+      <Filter>Game Elements\Brick</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\Paddle.hpp">
+      <Filter>Game Elements\Paddle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\GameStage.hpp">
+      <Filter>GameWindow\GameStage</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
