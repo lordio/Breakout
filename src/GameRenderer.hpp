@@ -14,7 +14,6 @@ class Drawable;
 class GameRenderer : public Insanity::Default::Renderer
 {
 	std::array<float, 4> _clearColor;
-	Insanity::Ptr<Insanity::IShaderProgram> _prog;
 	std::list<Drawable*> _drawList;
 public:
 	GameRenderer(GameWindow * win, Insanity::IConfigObject const * cfg);

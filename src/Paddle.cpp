@@ -46,9 +46,10 @@ Paddle::~Paddle()
 	glDeleteVertexArrays(1, &_arr);
 }
 
-void Paddle::Draw(Insanity::IShaderProgram * prog)
+void Paddle::Draw()
 {
-	prog->SetUniform("pos", _pos);
+	glUniform2fv(glGetUniformLocation(1, "pos"), 1, _pos);
+	//prog->SetUniform("pos", _pos);
 	glBindVertexArray(_arr);
 	glEnableVertexAttribArray(0);
 	glEnableVertexAttribArray(1);

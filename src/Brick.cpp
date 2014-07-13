@@ -54,12 +54,13 @@ void Brick::SetBrickState(BrickState const * state)
 		_rect->SetY(_instState->pos[1]);
 	}
 }
-void Brick::Draw(Insanity::IShaderProgram * prog)
+void Brick::Draw()
 {
 	//if no state is set, or the brick is inactive, don't draw anything.
 	if (!_instState || !_instState->active) return;
 
-	prog->SetUniform("pos", _instState->pos);
+	glUniform2fv(glGetUniformLocation(1, "pos"), 1, _instState->pos);
+	//prog->SetUniform("pos", _instState->pos);
 	glBindVertexArray(_arr);
 	glEnableVertexAttribArray(0);
 	glEnableVertexAttribArray(1);

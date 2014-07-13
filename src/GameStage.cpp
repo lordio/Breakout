@@ -170,14 +170,14 @@ void GameStage::_CollideBallBricks()
 	}
 }
 
-void GameStage::Draw(Insanity::IShaderProgram * prog)
+void GameStage::Draw()
 {
-	_pad.Draw(prog);
-	_ball.Draw(prog);
+	_pad.Draw();
+	_ball.Draw();
 	for (BrickState const& bs : _bricks)
 	{
 		_brktmpl.SetBrickState(&bs);
-		_brktmpl.Draw(prog);
+		_brktmpl.Draw();
 	}
 }
 void GameStage::Update()

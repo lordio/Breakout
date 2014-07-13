@@ -28,7 +28,7 @@ public:
 	~Brick();
 
 	void SetBrickState(BrickState const * state);
-	void Draw(Insanity::IShaderProgram * prog) override;
+	void Draw() override;
 
 	Insanity::TRectangle<float> const * GetRect() const;
 

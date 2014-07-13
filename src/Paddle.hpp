@@ -19,7 +19,7 @@ public:
 	Paddle();
 	~Paddle();
 
-	void Draw(Insanity::IShaderProgram * prog) override;
+	void Draw() override;
 	void Update() override;
 
 	void Move(float x);

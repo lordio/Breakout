@@ -14,14 +14,14 @@ class Ball : public Drawable, public Updatable
 	GLuint _arr;
 	GLuint _buf;
 	std::array<Insanity::u32, 6> _indices;
-	Insanity::TVector<float, 2> _pos;
+	Insanity::TVector<float, 2> _pos; //ideally, use std::array instead of Insanity vector/matrix classes.
 	Insanity::TVector<float, 2> _motion;
 	Insanity::Ptr<Insanity::TRectangle<float>> _rect;
 public:
 	Ball();
 	~Ball();
 
-	void Draw(Insanity::IShaderProgram * prog) override;
+	void Draw() override;
 	void Update() override;
 
 	float GetX() const;

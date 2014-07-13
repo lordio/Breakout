@@ -48,9 +48,11 @@ Ball::~Ball()
 	glDeleteVertexArrays(1, &_arr);
 }
 
-void Ball::Draw(Insanity::IShaderProgram * prog)
+void Ball::Draw()
 {
-	prog->SetUniform("pos", _pos);
+	//cache the uniform location. Or, hell, have the renderer keep track of it.
+	glUniform2fv(glGetUniformLocation(1, "pos"), 1, _pos);
+	//prog->SetUniform("pos", _pos);
 	glBindVertexArray(_arr);
 	glEnableVertexAttribArray(0);
 	glEnableVertexAttribArray(1);

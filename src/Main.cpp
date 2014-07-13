@@ -13,7 +13,7 @@ int main(int argc, char const * argv [])
 {
 	Ptr<IApplication> app{ IApplication::GetInstance() };
 
-	Ptr<IConfigFile> cf{ IConfigFile::GetInstance("Breakout.cfg") };
+	Ptr<IConfigFile> cf{ IConfigFile::GetInstance("../../../bin/Win32/Debug/Breakout.cfg") };
 	if (!cf->IsValid()) return 1;
 
 	Ptr<GameWindow> win{ new GameWindow{ cf } };

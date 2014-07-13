@@ -36,7 +36,7 @@ public:
 	GameStage();
 	~GameStage();
 
-	void Draw(Insanity::IShaderProgram * prog) override;
+	void Draw() override;
 	void Update() override;
 
 	void SetArrowState(Insanity::EKey key, bool state);
